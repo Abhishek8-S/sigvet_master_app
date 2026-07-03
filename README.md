@@ -214,5 +214,5 @@ For internal Sigvet team support, raise an issue in the repository or contact th
 ---
 
 <div align="center">
-<sub>Built with ❤️ by the Sigvet Engineering Team</sub>
+<sub>Built with by Abhishek S @ sigtuple</sub>
 </div>
