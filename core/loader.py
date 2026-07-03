@@ -9,7 +9,10 @@ def load_tests_from_folder():
     Returns a list of Class types (not instances).
     """
     found_tests = []
-    tests_dir = os.path.join(os.getcwd(), 'tests')
+    # Resolve relative to this file's location, not CWD.
+    # CWD is unreliable when launched as root via sudo from a .desktop entry.
+    _base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    tests_dir = os.path.join(_base, 'tests')
     
     if not os.path.exists(tests_dir):
         os.makedirs(tests_dir)

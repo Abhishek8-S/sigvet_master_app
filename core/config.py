@@ -2,9 +2,15 @@ import json
 import os
 import yaml
 
+# Resolve paths relative to this file's location (core/ → parent = install root).
+# This ensures config files are found regardless of the current working directory,
+# which is critical when the app is launched as root via sudo from a .desktop entry.
+_BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
 def load_settings():
     """Loads general UI settings."""
-    path = os.path.join('config', 'settings.json')
+    path = os.path.join(_BASE_DIR, 'config', 'settings.json')
     try:
         with open(path, 'r') as f:
             return json.load(f)
@@ -13,7 +19,7 @@ def load_settings():
 
 def load_benchmarks():
     """Loads expected values for tests."""
-    path = os.path.join('config', 'benchmark_values.yaml')
+    path = os.path.join(_BASE_DIR, 'config', 'benchmark_values.yaml')
     try:
         with open(path, 'r') as f:
             return yaml.safe_load(f) or {}
@@ -22,7 +28,7 @@ def load_benchmarks():
 
 def load_device_profiles():
     """Loads device-specific overrides."""
-    path = os.path.join('config', 'device_profiles.yaml')
+    path = os.path.join(_BASE_DIR, 'config', 'device_profiles.yaml')
     try:
         with open(path, 'r') as f:
             return yaml.safe_load(f) or {}
