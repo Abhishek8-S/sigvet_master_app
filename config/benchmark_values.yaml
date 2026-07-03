@@ -1,0 +1,48 @@
+"StressNG Performance":
+  key: "bogo_ops"
+  expected: 35000.0
+  unit: " ops"
+
+"Geekbench CPU":
+  metrics:
+    - key: "single_core_score"
+      expected: 2500
+      unit: ""
+    - key: "multi_core_score"
+      expected: 10000
+      unit: ""
+
+"Memory Stability Test":
+  key: "memory_check"
+  expected: "Pass"
+  unit: ""
+
+"FIO SSD Speed":
+  metrics:
+    - key: "read_IOPS"
+      expected: "120k"
+      unit: ""
+    - key: "read_BW"
+      expected: "500MiB/s"
+      unit: ""
+    - key: "write_IOPS"
+      expected: "50k"
+      unit: ""
+    - key: "write_BW"
+      expected: "200MiB/s"
+      unit: ""
+
+"Wi-Fi Module Reliability":
+  metrics:
+    - key: "wifi_score"
+      expected: "10/10"
+      unit: ""
+    - key: "packet_loss"
+      expected: "0%"
+      unit: ""
+
+"Network Performance":
+  key: "download_mbps"
+  expected: 100.0
+  unit: " Mbps"
+

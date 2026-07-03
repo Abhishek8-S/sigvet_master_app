@@ -1,0 +1,123 @@
+# ============================================================
+#  sigvet_master_app — .gitignore
+#  Python / PyQt6 desktop application | Linux / Debian target
+# ============================================================
+
+# ---------------------------
+# Python
+# ---------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+.eggs/
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+
+# mypy / pyright type-checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyright/
+pyrightconfig.json
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+*.ipynb
+
+# ---------------------------
+# Build artifacts
+# ---------------------------
+# Debian packages
+*.deb
+sv-setup-v2_build/
+sv-setup-v2/
+build/
+
+# PyInstaller
+*.spec
+dist/
+
+# ---------------------------
+# IDE / Editor
+# ---------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Qodo / AI coding tools
+.qodo/
+.dev/
+
+# ---------------------------
+# Application runtime & secrets
+# ---------------------------
+# Generated reports — do NOT commit
+reports/
+*.html
+*.pdf
+
+# Config overrides with secrets / local paths
+config/settings.json
+config.yaml
+*.env
+.env
+.env.*
+secrets.json
+credentials.json
+token.json
+*.pem
+*.key
+*.crt
+
+# Geekbench binary cache / results
+utils/geekbench/
+
+# ---------------------------
+# OS artifacts
+# ---------------------------
+.Trash-*/
+lost+found
+
+# ---------------------------
+# Logs
+# ---------------------------
+*.log
+logs/

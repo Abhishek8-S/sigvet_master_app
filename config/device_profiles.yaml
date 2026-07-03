@@ -1,0 +1,71 @@
+Skull Saints:
+  "StressNG Performance": { expected: 2662169.0 }
+  "Geekbench CPU":
+    metrics:
+      - key: "single_core_score"
+        expected: 2642
+        unit: ""
+      - key: "multi_core_score"
+        expected: 11022
+        unit: ""
+  "Memory Stability Test": { expected: "Pass" }
+  "FIO SSD Speed":
+    metrics:
+      - key: "read_IOPS"
+        expected: "129k"
+        unit: ""
+      - key: "read_BW"
+        expected: "505MiB/s"
+        unit: ""
+      - key: "write_IOPS"
+        expected: "55.4k"
+        unit: ""
+      - key: "write_BW"
+        expected: "217MiB/s"
+        unit: ""
+  "Network Performance": { expected: 50.0 }
+  "Wi-Fi Module Reliability":
+    metrics:
+      - key: "wifi_score"
+        expected: "10/10"
+        unit: ""
+      - key: "packet_loss"
+        expected: "0%"
+        unit: ""
+Desktop:
+  "CPU Matrix Cruncher": { expected: 2.0 }
+  "Disk Write Speed": { expected: 450.0 }
+  "StressNG Performance": { expected: 35000.0 }
+  "FIO SSD Speed": 
+    metrics:
+      - key: "read_IOPS"
+        expected: "120k"
+        unit: ""
+      - key: "read_BW"
+        expected: "500MiB/s"
+        unit: ""
+      - key: "write_IOPS"
+        expected: "50k"
+        unit: ""
+      - key: "write_BW"
+        expected: "200MiB/s"
+        unit: ""
+  "Geekbench CPU": 
+    metrics:
+      - key: "single_core_score"
+        expected: 2500
+        unit: ""
+      - key: "multi_core_score"
+        expected: 10000
+        unit: ""
+  "Network Performance": { expected: 100.0 }
+  "Memory Stability Test": { expected: "Pass" }
+
+Asus:
+  "CPU Matrix Cruncher": { expected: 2.5 }
+  "Disk Write Speed": { expected: 400.0 }
+  "StressNG Performance": { expected: 30000.0 }
+  "Geekbench CPU": { expected: 2000 }
+  "Network Performance": { expected: 50.0 }
+  "Memory Stability Test": { expected: "Pass" }
+
